@@ -71,10 +71,10 @@ def login():
     if form.validate_on_submit():
         if form.email.data == 'admin@flaskblog.com' and form.password.data == 'password':
             flash(f'You have been logged in!', 'success')   
-        return redirect(url_for('home'))
-    else:
-        flash(f'Login Unsuccessful.Please check username and password','danger')
-    return render_template('login.html', title='Login', form=form)
+            return redirect(url_for('home'))
+        else:
+            flash(f'Login Unsuccessful.Please check username and password','danger')
+    return render_template('login.html', title='login', form=form)
  
 if __name__ == "__main__":
     app.run(debug=True) 

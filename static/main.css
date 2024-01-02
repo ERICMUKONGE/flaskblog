@@ -83,4 +83,6 @@ body {
   .form-check{
     margin-right: 600px;
   }
-  
+  .form-check-input{
+    position: relative;
+  }
