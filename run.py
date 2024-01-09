@@ -1,5 +1,3 @@
-
-
 from flaskblog import app
 
 if __name__ == "__main__":
@@ -9,4 +7,4 @@ if __name__ == "__main__":
 # def db_create():
 #     with app.app_context():
 #         db.create_all()
-#         print('Database created')    
+#         print('Database created') 
